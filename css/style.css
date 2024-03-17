@@ -1009,6 +1009,10 @@ details{
     .main__top-form-title {
         font-size: 20px;
     }
+    .price__desc {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 360px) {
     .main__top-desc {
@@ -1068,12 +1072,11 @@ details{
     .advantages__text {
         padding-left: 60px;
     }
-    .price__desc {
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
     .label {
         padding: 10px;
+    }
+    .price__desc {
+        font-size: 16px;
     }
 }
 @media (max-width: 260px) {
