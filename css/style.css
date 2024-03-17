@@ -1003,6 +1003,12 @@ details{
     .scheme {
         padding: 40px 0;
     }
+    .main__top-list {
+        font-size: 16px;
+    }
+    .main__top-form-title {
+        font-size: 20px;
+    }
 }
 @media (max-width: 360px) {
     .main__top-desc {
@@ -1012,11 +1018,8 @@ details{
         max-width: 100%;
         padding: 20px 10px;
     }
-    .main__top-list {
-        font-size: 16px;
-    }
     .advantages__list-title {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 @media (max-width: 320px) {
@@ -1028,7 +1031,7 @@ details{
     }
     .main__top-form-title,
     .price__name {
-        font-size: 20px;
+        font-size: 18px;
     }
     .main__top-form-list {
         gap: 5px;
