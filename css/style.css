@@ -76,66 +76,73 @@ button:hover {
 }
 .main__top-form-list {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: space-between;
-    align-items: center;
     font-weight: 500;
-    font-size: 10px;
-    line-height: 1.5;
-    list-style-position: inside;
-    padding-bottom: 9px;
+    font-size: 19px;
+    line-height: 25px;
+    padding-bottom: 15px;
 }
-.main__top-form-item1::marker,
-.main__top-form-item2::marker,
-.main__top-form-item3::marker {    
+.main__top-form-list span {
+    float: left;
+    text-align: center;
     font-weight: 900;
-    font-size: 20px;
-    line-height: 1;
+    color: #fff;
+    font-size: 67px;
+    line-height: 1;   
+    width: 50px; 
 }
-.main__top-form-item1 {
-    padding: 10px;
-    border-radius: 20px;
-    background: #d6eeff;
-}
-.main__top-form-item2 {
-    padding: 10px;
-    border-radius: 20px;
-    background: linear-gradient(80deg, #bee4ff 0%, #45ff13 100%);
-}
+.main__top-form-item1,
+.main__top-form-item2,
 .main__top-form-item3 {
     padding: 10px;
     border-radius: 20px;
-    background: linear-gradient(80deg, #45ff13 0%, #d1ff13 100%);
-}
-.main__top-form input {
     width: 100%;
-    border: 1px solid #08f;
-    border-radius: 10px;
-    padding: 14px 22px;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 400;    
-    color: #4d4d4d;
+    flex-basis: 100%;
+    height: 70px;
 }
-.main__top-form input::placeholder {
-    font-size: 16px;
-    font-weight: 400;    
-    color: #4d4d4d;
-    font-family: "Overpass", sans-serif; 
-    opacity: 0.5; 
+.main__top-form-item1 {
+    background: linear-gradient(0.222turn,rgba(225,204,255,1) 0%,rgba(225,204,255,1) 100%);
 }
-.main__top-form input:focus{
-    border: 2px solid #08f;
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .1);
+.main__top-form-item2 {
+    background: linear-gradient(0.223turn,rgba(190,228,255,1) 0%,rgba(190,228,255,0.52) 100%);
 }
-.main__top-form button {
-    border-radius: 10px;
+.main__top-form-item3 {
+    background: linear-gradient(0.223turn,rgba(69,255,19,0.52) 0%,rgba(69,255,19,0.52) 100%);
+}
+.main__top-form-item1:hover span,
+.main__top-form-item2:hover span,
+.main__top-form-item3:hover span {
+    text-shadow: 2px 2px 1px #08f;
+}
+.main__top-form-item1:hover,
+.main__top-form-item2:hover,
+.main__top-form-item3:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
+    opacity: .9;
+}
+
+.main__top-button {
+    display: block;
+    border-radius: 20px;
     padding: 12px 0;
     width: 100%;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    background: #08f;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .25);
+    color: #fff;
+    background-color: #08f;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 21px;
+    text-align: center;
+}
+.main__top-button:hover {
+    opacity: .8;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .5);
+}
+.main__top-span {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
 }
 .main__top-title {
     font-weight: 800;
@@ -1025,6 +1032,9 @@ details{
     .advantages__list-title {
         font-size: 20px;
     }
+    .main__top-form-list {
+        font-size: 18px;
+    } 
 }
 @media (max-width: 320px) {
     .main__top-desc {
@@ -1033,12 +1043,12 @@ details{
     .main__top-list {
         font-size: 14px;
     }
+    .main__top-button {
+        font-size: 16px;
+    }
     .main__top-form-title,
     .price__name {
         font-size: 18px;
-    }
-    .main__top-form-list {
-        gap: 5px;
     }
     .main__top-form-item1,
     .main__top-form-item2,
@@ -1084,6 +1094,10 @@ details{
         font-size: 24px;
         margin-bottom: 24px;
     }
+    .main__top-form-list {
+        font-size: 14px;
+        line-height: 22px;
+    }
     .main__top-desc {
         font-size: 14px;
         margin-bottom: 24px;
@@ -1091,9 +1105,6 @@ details{
     .main__top-form-title,
     .price__name {
         font-size: 18px;
-    }
-    .main__top-form-list {
-        flex-wrap: wrap;
     }
     .main__top-form-item1,
     .main__top-form-item2,
